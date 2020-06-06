@@ -1,0 +1,99 @@
+*{
+	margin: 0px ;
+	padding: 0px ;
+}
+body{
+	background-color: #fff1ba;
+}
+.header{
+    background-color: #ffcc00;
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* font-size: xx-large; */
+    position: relative;
+}
+.header img{
+    height: 250px;
+}
+.head{
+	position: absolute;
+	bottom: -26px;
+	font-family: 'Raleway', sans-serif;
+	font-size: xxx-large;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main{
+	width: 100%;
+	background-color: #fff1ba;
+	margin-top: 70px;
+}
+.main-content{
+	text-align: center;
+}
+input:focus, textarea:focus, select:focus{
+ 	outline: none;
+}
+.inputValue{
+	font-family: 'Arvo', serif;
+	border: none;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #f1e3ae;
+    width: 54%;    
+    padding: 10px;
+}
+.display-weather{
+	width: 54%;
+	margin: auto;
+}
+.city{
+	padding:15px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 26px;
+}
+.degree:hover{
+	font-size:102px; 
+	animation: glow 2s infinite ;
+}
+@keyframes glow{
+	0%,35%,70%{
+		color: #ffcc00;
+		filter: blur(0px); 
+	}
+	5%,65%{
+		color: black;
+		filter: blur(3px); 
+	}
+}
+.degree{
+	transition: 0.5s;
+	display: inline-block;
+	font-size: 93px;
+	cursor: pointer;
+	font-family: 'Metal Mania', cursive;
+	vertical-align: text-bottom;
+	margin-right: 35px;
+}
+.inner{
+	font-size: 30px;
+	font-family: 'Architects Daughter', cursive;
+	display: inline-block;
+}
+.bg{
+	background-image: url("bg2.gif");
+	background-position: center;
+    height: 50%;
+    margin-top: 50%;
+}
+.img img{
+	height: 100px;
+}
