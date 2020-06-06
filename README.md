@@ -7,7 +7,7 @@ OutLook :
 ![Weather-Forecasts](https://github.com/Harikarthyk/Weather-Forecasts/blob/master/img1.png)
 
 
-
+-
 
 
 ![Weather-Forecasts](https://github.com/Harikarthyk/Weather-Forecasts/blob/master/img2.png)
