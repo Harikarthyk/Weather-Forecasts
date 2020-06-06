@@ -3,8 +3,7 @@ $(document).ready(function(){
 	$('.inputValue').on('keyup',function(event){
 		if( event.keyCode===13 ){
 			var city = $('.inputValue').val();
-			// console.log(city) ;
-			$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid={YOUR_APPID}",function(data){
+			$.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid={YOUR_API-ID}",function(data){
 				console.log(data) ;
 				var name = data.name+","+data.sys.country ;
 				var degree = Math.round(data.main.temp); 
@@ -15,10 +14,8 @@ $(document).ready(function(){
 				$('.icon').attr("src",icon) ;
 				$('.description').text(description) ;
 				$('.metric').show();
-			
 			});
 			$(this).val('') ;
-			// city = '' ;
 		}
 	});
 });
